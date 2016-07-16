@@ -1,93 +1,24 @@
-<head>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-    crossorigin="anonymous">
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
 
-  <!-- Latest compiled and minified JavaScript -->
-  <script
-    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-    crossorigin="anonymous">
-  </script>
+        <link rel="stylesheet" href="css/style.css">
 
-  <!-- CSS -->
-  <style media="screen">
-    body{
-      padding-top: 50px;
-      background-color: #383838;
-    }
+    
+    
+    
+  </head>
 
-    h1{
-      text-align: center;
-    }
+  <body>
 
-    .navbar-default {
-      background-color: #009688;
-      border-color: #009688;
-    }
-
-    .navbar-default .navbar-brand {
-      color: #ffffff;
-    }
-
-    .navbar-default .navbar-brand:hover,
-    .navbar-default .navbar-brand:focus {
-      color: #d8d8d8;
-    }
-
-    .navbar-default .navbar-nav > li > a {
-      color: #d8d8d8;
-    }
-
-    .navbar-default .navbar-nav > li > a:hover,
-    .navbar-default .navbar-nav > li > a:focus {
-      color: #ffffff;
-    }
-
-    .navbar-default .navbar-nav > .active > a,
-    .navbar-default .navbar-nav > .active > a:hover,
-    .navbar-default .navbar-nav > .active > a:focus {
-      color: #ffffff;
-      background-color: #00bfa5;
-    }
-
-    .section{
-      border: 1px solid;
-      border-color: rgba(0,0,0,.12);
-      padding: 2% 0 2% 0;
-      margin: 0 5% 0 5%;
-      background-color: #fafafa;
-      color: #000;
-    }
-
-    .description{
-      font-size: x-large;
-      text-indent: 5%;
-      text-align: justify;
-    }
-
-    #about{
-      padding: 0 8% 3% 8%;
-    }
-
-    #portfolio{
-    }
-
-    #contact{
-    }
-
-    #footer{
-      background-color: #009688;
-      //position: fixed;
-      //left: 0;
-      //bottom: 0;
-      height: 70px;
-      width: 100%;
-    }
-  </style>
-
+    <head>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 </head>
 
 <body>
@@ -95,7 +26,7 @@
   <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -103,7 +34,7 @@
         </button>
         <a href="#" class="navbar-brand">Marco Carrizales</a>
       </div>
-
+      
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#about">About</a></li>
@@ -113,9 +44,9 @@
       </div>
     </div> <!-- Container-Fluid -->
   </nav>
-
+  
   <!-- Content of the portfolio -->
-  <div class="container-fluid">
+  <div class="container-fluid" id="content">
     <div class="section" id="about">
       <div class="row">
         <div class="col-md-4 col-sm-4">
@@ -126,27 +57,56 @@
       </div>
       <div class="row">
         <div class="col-md-4 col-sm-4">
-          <img src="https://avatars3.githubusercontent.com/u/5376705?v=3&s=400"
+          <img src="https://avatars3.githubusercontent.com/u/5376705?v=3&s=400" 
                alt="Photo of Marco Carrizales" class="img-responsive img-circle"/>
         </div>
         <div class="col-md-8 col-sm-8">
-          <p class="description">I am a student (B.S. Information and Communication Technologies) currently living in Tampico, Mexico. My interests range from developing Android apps to translate open source projects (also proprietary projects). I am also interested in developing projects in C# and I’m currently getting my Front End certificate by Free Code Camp.</p>
+          <p class="description spacing">I am a student (B.S. Information and Communication Technologies) currently living in Tampico, Mexico. My interests range from developing Android apps to translate open source projects (also proprietary projects). I am also interested in developing projects in C# and I’m currently getting my Front End certificate by Free Code Camp.</p>
         </div>
       </div>
     </div>
     <div class="section" id="portfolio">
       <h1>Portfolio</h1>
+      <p class="">Here you can see some of the stuff I've made.</p>
+      <div class="spacing"></div>
+      <div class="row">
+        <a href="https://codepen.io/tamoxin/full/GZrNde/" target="_blank" class="col-md-6 col-sm-12"><img src="https://dl.dropboxusercontent.com/u/49375955/Images/tribute%20page.jpg?raw=1" alt="Tribute Page" class="img-responsive"/></a>
+        <a href="https://github.com/tamoxin" target="_blank" class="col-md-6 col-sm-12"><img src="https://dl.dropboxusercontent.com/u/49375955/Images/github.jpg?raw=1" alt="Github Profile" class="img-responsive"/></a>
+        <div class="spacing col-md-12 col-sm-12"></div>
+        <a href="https://github.com/tamoxin/TwoFrogs" target="_blank" class="col-md-6 col-sm-12"><img src="https://dl.dropboxusercontent.com/u/49375955/Images/two%20frogs.jpg?raw=1" alt="Two Frogs game" class="img-responsive"/></a>
+        <a href="https://translate.google.com/translate?sl=es&tl=en&js=y&prev=_t&hl=en&ie=UTF-8&u=http%3A%2F%2Fdiftampico.tamaulipas.gob.mx%2Fsala-de-prensa%2Fcomunicados%25202016%2Fmayo%2F25-5-16%2Fcomunicado%2520mayo%252025-5-16.htm&edit-text=" target="_blank" class="col-md-6 col-sm-12"><img src="https://dl.dropboxusercontent.com/u/49375955/Images/dif.jpg?raw=1" alt="Social Project" class="img-responsive"/></a>
+      </div>
+      <!-- End of portfolio images -->
+      <div class="spacing"></div>
+      <a href="https://github.com/tamoxin?tab=repositories" target="_blank" class="btn btn-info" id="repositories"><i class="fa fa-github fa-lg"></i> My repositories</a>
     </div>
     <div class="section" id="contact">
       <h1>Contact</h1>
       <p class="description">You can click the button above to view my repo. If you’d like to get in touch, feel free to say hello through any of the social links below.</p>
+      <div class="row" id="social-buttons">
+        <a href="https://twitter.com/tamoxin" target="_blank" class="social-buttons col-md-3 col-sm-6" id="twitter"><i class="fa fa-twitter-square fa-5x"></i></a>
+        <a href="https://plus.google.com/u/0/+MarcoCarrizales" target="_blank" class="social-buttons col-md-3 col-sm-6" id="google"><i class="fa fa-google-plus-square fa-5x"></i></a>
+        <a href="http://steamcommunity.com/id/tamoxin/" target="_blank" class="social-buttons col-md-3 col-sm-6" id="steam"><i class="fa fa-steam-square fa-5x"></i></a>
+        <a href="https://www.twitch.tv/tamoxin/profile" target="_blank" class="social-buttons col-md-3 col-sm-6" id="twitch"><i class="fa fa-twitch fa-5x"></i></a>
+      </div>
     </div>
-  </div>
-
+  </div> <!-- End of container-fluid -->
+  
   <!-- Footer -->
   <footer id="footer">
-    <div class="container-fluid">
-      <p class="text-muted">footer</p>
+    <div class="container-fluid" id="footer-text">
+      <p>Marco Carrizales 2016</p>
     </div>
   </footer>
 </body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
